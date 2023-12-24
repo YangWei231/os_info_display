@@ -14,7 +14,7 @@
 ## 本机性能监控显示
 1. 安装influxDB数据库和Grafana可视化工具。（可参考turorial.md）
 2. 修改local_os_info_collector.sh文件里面的数据库配置信息。
-3. 在Grafana（通常是http://localhost:3000）里面添加新的dash board，导入./dash_board/dash_local.json配置文件。
+3. 在Grafana（通常是http://localhost:3000 ）里面添加新的dash board，导入./dash_board/dash_local.json配置文件。
 4. 在dashboard里面导出链接，填入dash_display.html里面的显示地址value。
 5. 完成。可点开html网页观察性能数据可视化。
 ## 分布式设备性能监控
@@ -22,4 +22,5 @@
 2. 在分布式设备上运行distributed_os_collector.sh文件即可。（需修改INFLUXDB_HOST为主机IP地址）
 # 可能遇到的BUG
 Q：html无法显示grafana的dashboard窗口。
+
 A：grafana的分享权限不够，需要调整其可匿名登录且可支持网页嵌入。参考[Grafana基础：集成方法之页面嵌入_grafana嵌入自己网页-CSDN博客](https://blog.csdn.net/liumiaocn/article/details/104047314)
